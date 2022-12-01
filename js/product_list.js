@@ -7,5 +7,9 @@
         item.remove();
         $(item).appendTo('.product-list');
     });
+
+    $(document).ready( () => {
+        
+    })
  
 

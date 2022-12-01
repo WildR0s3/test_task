@@ -44,11 +44,12 @@ class Product extends DataBase {
     
 
     public function deleteProducts() {
-            foreach ($_POST['delete-checkbox'] as $value) {
-                $sql = "DELETE FROM products WHERE ID = $value";
-                mysqli_query($this->connect(), $sql);
-        }
-        
+            if (isset($_POST['delete-checkbox'])) {
+                foreach ($_POST['delete-checkbox'] as $value) {
+                    $sql = "DELETE FROM products WHERE ID = $value";
+                    mysqli_query($this->connect(), $sql);
+            }
+        } 
     }
 }	
 

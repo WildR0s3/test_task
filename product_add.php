@@ -10,8 +10,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Product Add</h1>
-    <form method="POST" id="product_from" action="classes/insert.php">
+    
+    <form method="POST" id="product_form" action="classes/insert.php">
+
+        <div class="header">
+                <div class='text'>
+                    <h1>Product Add</h1>
+                </div>
+                <div class="btns">
+                    <button type="submit" name="submit" class="save-btn">SAVE</button>
+                    <a href="http://localhost/test_task/" ><button id="cancel-btn" type="button">CANCEL</button></a>
+                </div>
+        </div>
+        <div class="form-inputs">
         <label for="SKU">SKU</label>
         <input type="text" name="SKU" id="sku"><br>
         <label for="Name">Name</label>
@@ -55,14 +66,14 @@
             <p>Please provide weight of the book</p>
             </div>
         </div>
+        </div>
         
-        <button type="submit" name="submit" class="save-btn">SAVE</button>
         
     </form>
     <div id="div-message">
     <p id="form-message"></p>
     </div>
-    <a href="product_list.php"><button id="cancel-btn">CANCEL</button></a>
+    
 <script
   src="https://code.jquery.com/jquery-3.6.1.min.js"
   integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="

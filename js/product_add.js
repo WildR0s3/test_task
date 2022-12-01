@@ -25,7 +25,7 @@ $(document).ready( () => {
                 Name: name,
                 Price: price,
                 size: size,
-                height: height,
+                height: height, 
                 width: width,
                 length: length,
                 weight: weight,
@@ -33,7 +33,7 @@ $(document).ready( () => {
             }, success: function (response) {
                 $('#form-message').html(response);
                 if (response.indexOf('success') >= 0)
-                    window.location = 'http://localhost//test_task/product_list.php';
+                    window.location = 'http://localhost//test_task/index.php';
             },
             dataType: 'text'
         })

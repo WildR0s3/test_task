@@ -10,9 +10,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Product List</h1>
+    
 
 <form method="POST" action="classes/delete.php">
+<div class="header">
+        <div class='text'>
+          <h1>Product List</h1>
+        </div>
+        <div class="btns">
+          <button type="submit" name="delete" id="delete-product-btn">MASS DELETE</button>
+          <a href="add-product"><button type="button" id="add-product-btn">ADD</button></a>
+        </div>
+</div>
 
 <section class="product-list">
         <?php 
@@ -23,10 +32,10 @@
         ?>    
 </section>  
 
-<button type="submit" name="delete" id="delete-product-btn">MASS DELETE</button>
+
 </form>
 
-<a href="product_add.php"><button id="add-product-btn">ADD</button></a>
+
 <script
   src="https://code.jquery.com/jquery-3.6.1.min.js"
   integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
